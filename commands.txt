@@ -1,0 +1,4 @@
+ls -l
+top
+netstat
+kill all

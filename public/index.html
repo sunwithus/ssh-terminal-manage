@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSH SERVER</title>
+    <link rel="stylesheet" href="/xterm.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-btn.css" />
+    <script defer src="/xterm.js"></script>
+    <script defer src="/xterm-addon-fit.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>SSH</h1>
+      <nav>
+        <ul class="nav-buttons" id="navigation-buttons"></ul>
+      </nav>
+      <a href="#" id="stop-command">STOP</a>
+    </header>
+
+    <div class="top-space"></div>
+
+    <main>
+      <div id="terminal-container"></div>
+      <details id="commandsarea" class="to-edit-commands">
+        <summary>Click to expand</summary>
+        <textarea id="commands-text-area" rows="7" cols="40"></textarea>
+        <p id="save-button">Save Commands</p>
+      </details>
+    </main>
+    <hr />
+    <footer>
+      <h2>Vladivostok &reg</h2>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
